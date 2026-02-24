@@ -9,7 +9,7 @@ $oneDriveFolder = "$env:C:\Users\drew\OneDrive\Attachments\excel"
 $filePattern = "*.xlsx"
 
 # Email details
-$toEmail = "v-maccatabian@meralco.com.ph"
+$toEmail = ""
 $subject = "Request for Data Extract - EAM Bin Vehicle Stock Statement Report"
 $body = "Hi Elyza,`n`nSee attached requested extract.`n`nRegards."
 
@@ -47,5 +47,6 @@ $mail.Attachments.Add($latestFile.FullName)
 
 # Send the email
 $mail.Send()
+
 
 Write-Host "Email sent successfully via Outlook!"
